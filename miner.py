@@ -12,7 +12,7 @@ class NCBIGenomeMiner:
         self.taxon = taxon
         
         # Obrigatório: O NCBI exige que você se identifique para não bloquear seu IP
-        Entrez.email = "aluno.bioinfo@projeto2026.com"
+        Entrez.email = "albermangomes3@gmail.com"
         Entrez.tool = "ProjetoBioinfo2026"
 
     def get_chromosome_metadata(self) -> pd.DataFrame:
@@ -22,7 +22,9 @@ class NCBIGenomeMiner:
         try:
             # 1. Procura a montagem (Assembly) de referência da espécie
             print("1. Buscando o genoma de referência (Assembly)...")
+            # Etapa 1: Busca o genoma de referência da espécie
             search_handle = Entrez.esearch(db="assembly", term=f'"{self.taxon}"[Organism] AND "latest refseq"[filter]', retmax=1)
+            
             assembly_record = Entrez.read(search_handle)
             search_handle.close()
 
@@ -39,7 +41,8 @@ class NCBIGenomeMiner:
 
             # 3. Mapeia os cromossomos ligados a esta montagem
             print("2. Mapeando os cromossomos (Nuccore)...")
-            nuc_search = Entrez.esearch(db="nuccore", term=f'{assembly_acc}[Assembly] AND biomol_genomic[PROP]', retmax=100)
+            # Etapa 2: Mapeia os cromossomos
+            nuc_search = Entrez.esearch(db="nuccore", term=f'{assembly_acc}[Assembly] AND biomol_genomic[PROP]', retmax=1500)
             nuc_record = Entrez.read(nuc_search)
             nuc_search.close()
             
@@ -53,13 +56,18 @@ class NCBIGenomeMiner:
             for seq in seq_summaries:
                 acc = seq.get("AccessionVersion", "")
                 length = seq.get("Length", 0)
+                title = seq.get("Title", "")
                 
-                # Ignora pedaços pequenos não montados (Scaffolds). Focamos no que for maior que 500kb
-                if length and int(length) > 500000:
-                    # Limpa o título do NCBI para deixar bonito na tabela
-                    chr_name = seq.get("Title", "N/A").split(",")[-1].strip()
-                    if "chromosome" not in chr_name.lower() and "linkage" not in chr_name.lower():
-                        chr_name = "Cromossomo/Scaffold"
+                if length and int(length) > 1:
+                    # Verifica no título INTEIRO se é um cromossomo
+                    if "chromosome" in title.lower():
+                        # Tenta extrair o nome limpo (ex: "chromosome 1")
+                        # Procura algo como "chromosome X" no texto
+                        import re
+                        match_chr = re.search(r'(chromosome\s+\w+)', title, re.IGNORECASE)
+                        chr_name = match_chr.group(1) if match_chr else "Cromossomo"
+                    else:
+                        chr_name = "Scaffold"
                         
                     chromosomes_data.append({
                         "Espécie": self.taxon,
@@ -82,7 +90,7 @@ class NCBIGenomeMiner:
 
     def locate_gene(self, gene_symbol: str) -> Dict[str, str]:
         print(f"\n--- [PASSO 2] Localizando coordenadas do gene {gene_symbol} ---")
-        
+        #Aqui nós precisamos descobrir exatamente em qual dos 39 pares de cromossomos da galinha o gene GAPDH está escondido.
         search_handle = Entrez.esearch(db="gene", term=f'"{self.taxon}"[Organism] AND {gene_symbol}[Gene Name]', retmax=1)
         record = Entrez.read(search_handle)
         search_handle.close()

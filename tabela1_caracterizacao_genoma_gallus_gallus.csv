@@ -1,34 +1,318 @@
 Espécie,Cromossomo,Tamanho (bp),ID do Cromossomo (FASTA)
-Gallus gallus,Cromossomo/Scaffold,196242913,NC_052573.1
-Gallus gallus,Cromossomo/Scaffold,149940142,NC_052574.1
-Gallus gallus,Cromossomo/Scaffold,110406817,NC_052575.1
-Gallus gallus,Cromossomo/Scaffold,90563926,NC_052576.1
-Gallus gallus,Cromossomo/Scaffold,86044486,NC_059536.1
-Gallus gallus,Cromossomo/Scaffold,59353219,NC_052577.1
-Gallus gallus,Cromossomo/Scaffold,36265832,NC_052579.1
-Gallus gallus,Cromossomo/Scaffold,36041924,NC_052578.1
-Gallus gallus,Cromossomo/Scaffold,29567511,NC_052580.1
-Gallus gallus,Cromossomo/Scaffold,23494135,NC_052581.1
-Gallus gallus,Cromossomo/Scaffold,20321356,NC_052582.1
-Gallus gallus,Cromossomo/Scaffold,20129920,NC_052584.1
-Gallus gallus,Cromossomo/Scaffold,19981121,NC_052583.1
-Gallus gallus,Cromossomo/Scaffold,17936364,NC_052585.1
-Gallus gallus,Cromossomo/Scaffold,15370873,NC_052586.1
-Gallus gallus,Cromossomo/Scaffold,14125975,NC_052592.1
-Gallus gallus,Cromossomo/Scaffold,12700396,NC_052587.1
-Gallus gallus,Cromossomo/Scaffold,11216778,NC_052590.1
-Gallus gallus,Cromossomo/Scaffold,10459299,NC_052589.1
-Gallus gallus,Cromossomo/Scaffold,10193151,NC_052591.1
-Gallus gallus,Cromossomo/Scaffold,9109940,NC_059535.1
-Gallus gallus,Cromossomo/Scaffold,6842595,NC_052593.1
-Gallus gallus,Cromossomo/Scaffold,6402218,NC_052599.1
-Gallus gallus,Cromossomo/Scaffold,6382819,NC_052596.1
-Gallus gallus,Cromossomo/Scaffold,6197481,NC_052595.1
-Gallus gallus,Cromossomo/Scaffold,5297963,NC_052598.1
-Gallus gallus,Cromossomo/Scaffold,4978247,NC_052600.1
-Gallus gallus,Cromossomo/Scaffold,4783206,NC_052594.1
-Gallus gallus,Cromossomo/Scaffold,3049188,NC_052606.1
-Gallus gallus,Cromossomo/Scaffold,3011307,NC_052597.1
-Gallus gallus,Cromossomo/Scaffold,2866186,NC_052605.1
-Gallus gallus,Cromossomo/Scaffold,1684341,NC_052603.1
-Gallus gallus,Cromossomo/Scaffold,1208922,NC_052588.1
+Gallus gallus,chromosome 1,196242913,NC_052573.1
+Gallus gallus,chromosome 1,196242913,NW_024096104.1
+Gallus gallus,chromosome 2,149940142,NW_024096105.1
+Gallus gallus,chromosome 2,149940142,NC_052574.1
+Gallus gallus,chromosome 3,110406817,NC_052575.1
+Gallus gallus,chromosome 3,110406817,NW_024096106.1
+Gallus gallus,chromosome 4,90563926,NC_052576.1
+Gallus gallus,chromosome 4,90563926,NW_024096107.1
+Gallus gallus,chromosome Z,86044486,NW_025551560.1
+Gallus gallus,chromosome Z,86044486,NC_059536.1
+Gallus gallus,chromosome 5,59353219,NC_052577.1
+Gallus gallus,chromosome 5,59353219,NW_024096108.1
+Gallus gallus,chromosome 7,36265832,NW_024096110.1
+Gallus gallus,chromosome 7,36265832,NC_052579.1
+Gallus gallus,chromosome 6,36041924,NC_052578.1
+Gallus gallus,chromosome 6,36041924,NW_024096109.1
+Gallus gallus,chromosome 8,29567511,NW_024096111.1
+Gallus gallus,chromosome 8,29567511,NC_052580.1
+Gallus gallus,chromosome 9,23494135,NC_052581.1
+Gallus gallus,chromosome 9,23494135,NW_024096112.1
+Gallus gallus,chromosome 10,20321356,NC_052582.1
+Gallus gallus,chromosome 10,20321356,NW_024096113.1
+Gallus gallus,chromosome 12,20129920,NW_024096115.1
+Gallus gallus,chromosome 12,20129920,NC_052584.1
+Gallus gallus,chromosome 11,19981121,NC_052583.1
+Gallus gallus,chromosome 11,19981121,NW_024096114.1
+Gallus gallus,chromosome 13,17936364,NC_052585.1
+Gallus gallus,chromosome 13,17936364,NW_024096116.1
+Gallus gallus,chromosome 14,15370873,NW_024096117.1
+Gallus gallus,chromosome 14,15370873,NC_052586.1
+Gallus gallus,chromosome 20,14125975,NW_024096123.1
+Gallus gallus,chromosome 20,14125975,NC_052592.1
+Gallus gallus,chromosome 15,12700396,NW_024096118.1
+Gallus gallus,chromosome 15,12700396,NC_052587.1
+Gallus gallus,chromosome 18,11216778,NW_024096121.1
+Gallus gallus,chromosome 18,11216778,NC_052590.1
+Gallus gallus,chromosome 17,10459299,NC_052589.1
+Gallus gallus,chromosome 17,10459299,NW_024096120.1
+Gallus gallus,chromosome 19,10193151,NC_052591.1
+Gallus gallus,chromosome 19,10193151,NW_024096122.1
+Gallus gallus,chromosome W,9109940,NW_025551559.1
+Gallus gallus,chromosome W,9109940,NC_059535.1
+Gallus gallus,chromosome 21,6842595,NC_052593.1
+Gallus gallus,chromosome 21,6842595,NW_024096124.1
+Gallus gallus,chromosome 27,6402218,NC_052599.1
+Gallus gallus,chromosome 27,6402218,NW_024096130.1
+Gallus gallus,chromosome 24,6382819,NW_024096127.1
+Gallus gallus,chromosome 24,6382819,NC_052596.1
+Gallus gallus,chromosome 23,6197481,NW_024096126.1
+Gallus gallus,chromosome 23,6197481,NC_052595.1
+Gallus gallus,chromosome 26,5297963,NC_052598.1
+Gallus gallus,chromosome 26,5297963,NW_024096129.1
+Gallus gallus,chromosome 28,4978247,NW_024096131.1
+Gallus gallus,chromosome 28,4978247,NC_052600.1
+Gallus gallus,chromosome 22,4783206,NC_052594.1
+Gallus gallus,chromosome 22,4783206,NW_024096125.1
+Gallus gallus,chromosome 34,3049188,NC_052606.1
+Gallus gallus,chromosome 34,3049188,NW_024096137.1
+Gallus gallus,chromosome 25,3011307,NC_052597.1
+Gallus gallus,chromosome 25,3011307,NW_024096128.1
+Gallus gallus,chromosome 33,2866186,NW_024096136.1
+Gallus gallus,chromosome 33,2866186,NC_052605.1
+Gallus gallus,chromosome 31,1684341,NC_052603.1
+Gallus gallus,chromosome 31,1684341,NW_024096134.1
+Gallus gallus,chromosome 16,1208922,NC_052588.1
+Gallus gallus,chromosome 16,1208922,NW_024096119.1
+Gallus gallus,chromosome W,454552,NW_025551568.1
+Gallus gallus,chromosome 38,402402,NW_024096141.1
+Gallus gallus,chromosome 38,402402,NC_052610.1
+Gallus gallus,chromosome 30,380481,NC_052602.1
+Gallus gallus,chromosome 30,380481,NW_024096133.1
+Gallus gallus,chromosome 37,373902,NW_024096140.1
+Gallus gallus,chromosome 37,373902,NC_052609.1
+Gallus gallus,chromosome 29,361918,NC_052601.1
+Gallus gallus,chromosome 29,361918,NW_024096132.1
+Gallus gallus,chromosome 35,321869,NC_052607.1
+Gallus gallus,chromosome 35,321869,NW_024096138.1
+Gallus gallus,chromosome 33,305130,NW_024096195.1
+Gallus gallus,chromosome 30,295388,NW_024096184.1
+Gallus gallus,chromosome 35,261329,NW_024096213.1
+Gallus gallus,chromosome 32,255904,NW_024096135.1
+Gallus gallus,chromosome 32,255904,NC_052604.1
+Gallus gallus,Scaffold,250452,NW_024096266.1
+Gallus gallus,chromosome 33,225549,NW_024096196.1
+Gallus gallus,Scaffold,214729,NW_024096239.1
+Gallus gallus,Scaffold,207319,NW_024096242.1
+Gallus gallus,chromosome 32,203613,NW_024096189.1
+Gallus gallus,chromosome 39,192486,NW_024096142.1
+Gallus gallus,chromosome 39,192486,NC_052611.1
+Gallus gallus,Scaffold,189944,NW_024096263.1
+Gallus gallus,chromosome W,184108,NW_025551569.1
+Gallus gallus,chromosome W,179921,NW_025551563.1
+Gallus gallus,Scaffold,178240,NW_024096230.1
+Gallus gallus,chromosome 33,175572,NW_024096197.1
+Gallus gallus,chromosome 38,174734,NW_024096225.1
+Gallus gallus,chromosome 36,162909,NW_024096139.1
+Gallus gallus,chromosome 36,162909,NC_052608.1
+Gallus gallus,chromosome W,157377,NW_025551579.1
+Gallus gallus,chromosome 16,154094,NW_024096159.1
+Gallus gallus,Scaffold,147612,NW_024096261.1
+Gallus gallus,chromosome 35,143587,NW_024096216.1
+Gallus gallus,Scaffold,141357,NW_024096243.1
+Gallus gallus,chromosome 36,141279,NW_024096221.1
+Gallus gallus,chromosome 30,131885,NW_024096182.1
+Gallus gallus,chromosome W,121826,NW_025551578.1
+Gallus gallus,chromosome 33,121611,NW_024096200.1
+Gallus gallus,chromosome 19,118491,NW_024096166.1
+Gallus gallus,Scaffold,118422,NW_024096245.1
+Gallus gallus,chromosome 32,117347,NW_024096190.1
+Gallus gallus,chromosome 36,107757,NW_024096222.1
+Gallus gallus,chromosome W,107179,NW_025551570.1
+Gallus gallus,chromosome 33,107025,NW_024096198.1
+Gallus gallus,Scaffold,104902,NW_024096264.1
+Gallus gallus,Scaffold,104572,NW_024096244.1
+Gallus gallus,Scaffold,104381,NW_024096265.1
+Gallus gallus,chromosome W,103662,NW_025551561.1
+Gallus gallus,Scaffold,103076,NW_024096233.1
+Gallus gallus,chromosome W,102867,NW_025551565.1
+Gallus gallus,Scaffold,100260,NW_024096267.1
+Gallus gallus,chromosome W,96352,NW_025551562.1
+Gallus gallus,Scaffold,96108,NW_024096237.1
+Gallus gallus,Scaffold,95735,NW_024096246.1
+Gallus gallus,chromosome 9,94312,NW_024096154.1
+Gallus gallus,chromosome 31,93210,NW_024096185.1
+Gallus gallus,Scaffold,93163,NW_024096238.1
+Gallus gallus,chromosome 37,90149,NW_024096223.1
+Gallus gallus,Scaffold,87471,NW_024096234.1
+Gallus gallus,chromosome 33,85851,NW_024096199.1
+Gallus gallus,Scaffold,84341,NW_024096269.1
+Gallus gallus,chromosome W,83855,NW_025551572.1
+Gallus gallus,Scaffold,83112,NW_024096247.1
+Gallus gallus,Scaffold,82807,NW_024096248.1
+Gallus gallus,chromosome 37,82532,NW_024096224.1
+Gallus gallus,chromosome 1,79920,NW_024096143.1
+Gallus gallus,Scaffold,77889,NW_024096270.1
+Gallus gallus,chromosome 25,76519,NW_024096168.1
+Gallus gallus,chromosome 16,75806,NW_024096160.1
+Gallus gallus,chromosome W,75790,NW_025551566.1
+Gallus gallus,chromosome 16,75645,NW_024096162.1
+Gallus gallus,Scaffold,74214,NW_024096252.1
+Gallus gallus,chromosome 33,73999,NW_024096201.1
+Gallus gallus,chromosome W,72665,NW_025551574.1
+Gallus gallus,Scaffold,71675,NW_024096231.1
+Gallus gallus,chromosome W,70535,NW_025551571.1
+Gallus gallus,Scaffold,70368,NW_024096271.1
+Gallus gallus,chromosome 29,70001,NW_024096181.1
+Gallus gallus,chromosome 7,69750,NW_024096151.1
+Gallus gallus,Scaffold,69309,NW_024096272.1
+Gallus gallus,Scaffold,68974,NW_024096273.1
+Gallus gallus,chromosome 5,68914,NW_024096147.1
+Gallus gallus,chromosome W,68472,NW_025551575.1
+Gallus gallus,Scaffold,67895,NW_024096268.1
+Gallus gallus,Scaffold,67500,NW_024096253.1
+Gallus gallus,chromosome 16,67401,NW_024096161.1
+Gallus gallus,Scaffold,67073,NW_024096274.1
+Gallus gallus,chromosome 36,66826,NW_024096220.1
+Gallus gallus,chromosome 34,66641,NW_024096208.1
+Gallus gallus,chromosome 5,66524,NW_024096146.1
+Gallus gallus,chromosome 27,66453,NW_024096170.1
+Gallus gallus,chromosome W,65185,NW_025551577.1
+Gallus gallus,chromosome 10,65094,NW_024096156.1
+Gallus gallus,Scaffold,65052,NW_024096251.1
+Gallus gallus,chromosome 10,64893,NW_024096157.1
+Gallus gallus,chromosome 36,64707,NW_024096219.1
+Gallus gallus,Scaffold,63814,NW_024096227.1
+Gallus gallus,chromosome W,63726,NW_025551564.1
+Gallus gallus,Scaffold,63446,NW_024096236.1
+Gallus gallus,chromosome 35,63216,NW_024096217.1
+Gallus gallus,Scaffold,63043,NW_024096249.1
+Gallus gallus,chromosome 27,62994,NW_024096171.1
+Gallus gallus,chromosome W,62949,NW_025551573.1
+Gallus gallus,Scaffold,62656,NW_024096250.1
+Gallus gallus,chromosome 31,61356,NW_024096188.1
+Gallus gallus,chromosome 4,61055,NW_024096145.1
+Gallus gallus,Scaffold,60983,NW_024096254.1
+Gallus gallus,chromosome 27,60916,NW_024096173.1
+Gallus gallus,chromosome 8,60638,NW_024096153.1
+Gallus gallus,Scaffold,60443,NW_024096232.1
+Gallus gallus,Scaffold,60047,NW_024096262.1
+Gallus gallus,Scaffold,60023,NW_024096255.1
+Gallus gallus,chromosome W,59700,NW_025551567.1
+Gallus gallus,chromosome 32,59169,NW_024096191.1
+Gallus gallus,Scaffold,58683,NW_024096256.1
+Gallus gallus,chromosome 33,58662,NW_024096202.1
+Gallus gallus,Scaffold,58175,NW_024096257.1
+Gallus gallus,Scaffold,57918,NW_024096275.1
+Gallus gallus,Scaffold,57447,NW_024096235.1
+Gallus gallus,Scaffold,56923,NW_024096276.1
+Gallus gallus,chromosome 34,56199,NW_024096207.1
+Gallus gallus,Scaffold,55994,NW_024096240.1
+Gallus gallus,Scaffold,55762,NW_024096277.1
+Gallus gallus,chromosome 28,55678,NW_024096179.1
+Gallus gallus,Scaffold,55268,NW_024096241.1
+Gallus gallus,Scaffold,55103,NW_024096278.1
+Gallus gallus,chromosome 27,54708,NW_024096172.1
+Gallus gallus,Scaffold,54428,NW_024096279.1
+Gallus gallus,Scaffold,53955,NW_024096280.1
+Gallus gallus,chromosome 16,53728,NW_024096163.1
+Gallus gallus,Scaffold,53576,NW_024096281.1
+Gallus gallus,chromosome 35,53329,NW_024096218.1
+Gallus gallus,chromosome 33,52687,NW_024096204.1
+Gallus gallus,chromosome 27,52498,NW_024096174.1
+Gallus gallus,chromosome 35,51976,NW_024096215.1
+Gallus gallus,chromosome 33,51855,NW_024096205.1
+Gallus gallus,chromosome 22,51535,NW_024096167.1
+Gallus gallus,chromosome 34,51209,NW_024096210.1
+Gallus gallus,chromosome 34,51042,NW_024096209.1
+Gallus gallus,chromosome 33,50874,NW_024096203.1
+Gallus gallus,chromosome 32,50792,NW_024096194.1
+Gallus gallus,chromosome 27,50285,NW_024096175.1
+Gallus gallus,chromosome 27,50176,NW_024096176.1
+Gallus gallus,Scaffold,50169,NW_024096282.1
+Gallus gallus,Scaffold,50010,NW_024096283.1
+Gallus gallus,Scaffold,49881,NW_024096284.1
+Gallus gallus,Scaffold,49879,NW_024096285.1
+Gallus gallus,chromosome 5,49474,NW_024096148.1
+Gallus gallus,Scaffold,49138,NW_024096229.1
+Gallus gallus,Scaffold,48742,NW_024096286.1
+Gallus gallus,chromosome 33,48608,NW_024096206.1
+Gallus gallus,chromosome 25,48557,NW_024096169.1
+Gallus gallus,chromosome 27,48500,NW_024096178.1
+Gallus gallus,Scaffold,48399,NW_024096258.1
+Gallus gallus,chromosome 30,48379,NW_024096183.1
+Gallus gallus,Scaffold,48066,NW_024096288.1
+Gallus gallus,chromosome 16,48057,NW_024096158.1
+Gallus gallus,Scaffold,48005,NW_024096287.1
+Gallus gallus,Scaffold,47303,NW_024096259.1
+Gallus gallus,chromosome 39,47234,NW_024096226.1
+Gallus gallus,Scaffold,46998,NW_024096289.1
+Gallus gallus,chromosome 1,46909,NW_024096144.1
+Gallus gallus,Scaffold,46798,NW_024096290.1
+Gallus gallus,Scaffold,46423,NW_024096291.1
+Gallus gallus,Scaffold,46282,NW_024096292.1
+Gallus gallus,Scaffold,45544,NW_024096293.1
+Gallus gallus,Scaffold,45196,NW_024096294.1
+Gallus gallus,chromosome 31,45187,NW_024096187.1
+Gallus gallus,chromosome 32,44788,NW_024096192.1
+Gallus gallus,Scaffold,44405,NW_024096260.1
+Gallus gallus,Scaffold,44355,NW_024096295.1
+Gallus gallus,Scaffold,44210,NW_024096296.1
+Gallus gallus,chromosome W,43858,NW_025551576.1
+Gallus gallus,chromosome 8,43234,NW_024096152.1
+Gallus gallus,Scaffold,43118,NW_024096297.1
+Gallus gallus,Scaffold,42598,NW_024096298.1
+Gallus gallus,chromosome 32,42189,NW_024096193.1
+Gallus gallus,Scaffold,41614,NW_024096299.1
+Gallus gallus,Scaffold,41593,NW_024096301.1
+Gallus gallus,chromosome 27,41481,NW_024096177.1
+Gallus gallus,chromosome 34,41446,NW_024096211.1
+Gallus gallus,Scaffold,41243,NW_024096300.1
+Gallus gallus,chromosome 34,41151,NW_024096212.1
+Gallus gallus,Scaffold,40977,NW_024096302.1
+Gallus gallus,chromosome 16,40631,NW_024096165.1
+Gallus gallus,Scaffold,40443,NW_024096303.1
+Gallus gallus,Scaffold,40202,NW_024096304.1
+Gallus gallus,Scaffold,39464,NW_024096305.1
+Gallus gallus,Scaffold,39375,NW_024096306.1
+Gallus gallus,Scaffold,39011,NW_024096307.1
+Gallus gallus,chromosome 16,39003,NW_024096164.1
+Gallus gallus,Scaffold,38749,NW_024096309.1
+Gallus gallus,Scaffold,38648,NW_024096308.1
+Gallus gallus,Scaffold,38224,NW_024096310.1
+Gallus gallus,Scaffold,37449,NW_024096311.1
+Gallus gallus,Scaffold,36882,NW_024096312.1
+Gallus gallus,Scaffold,36882,NW_024096313.1
+Gallus gallus,chromosome 9,36506,NW_024096155.1
+Gallus gallus,Scaffold,36226,NW_024096314.1
+Gallus gallus,chromosome 31,36016,NW_024096186.1
+Gallus gallus,Scaffold,35114,NW_024096315.1
+Gallus gallus,Scaffold,34936,NW_024096316.1
+Gallus gallus,Scaffold,33747,NW_024096318.1
+Gallus gallus,Scaffold,33736,NW_024096319.1
+Gallus gallus,Scaffold,33735,NW_024096317.1
+Gallus gallus,Scaffold,33695,NW_024096320.1
+Gallus gallus,chromosome 28,33581,NW_024096180.1
+Gallus gallus,Scaffold,33289,NW_024096321.1
+Gallus gallus,Scaffold,33066,NW_024096322.1
+Gallus gallus,Scaffold,31918,NW_024096323.1
+Gallus gallus,chromosome 5,31766,NW_024096149.1
+Gallus gallus,Scaffold,31190,NW_024096228.1
+Gallus gallus,Scaffold,31101,NW_024096324.1
+Gallus gallus,Scaffold,30300,NW_024096325.1
+Gallus gallus,Scaffold,29717,NW_024096326.1
+Gallus gallus,chromosome 35,29326,NW_024096214.1
+Gallus gallus,Scaffold,28545,NW_024096327.1
+Gallus gallus,Scaffold,28542,NW_024096328.1
+Gallus gallus,Scaffold,27712,NW_024096331.1
+Gallus gallus,Scaffold,27600,NW_024096329.1
+Gallus gallus,Scaffold,27380,NW_024096330.1
+Gallus gallus,Scaffold,26712,NW_024096332.1
+Gallus gallus,Scaffold,26073,NW_024096334.1
+Gallus gallus,Scaffold,25954,NW_024096333.1
+Gallus gallus,Scaffold,25496,NW_024096335.1
+Gallus gallus,chromosome 5,25222,NW_024096150.1
+Gallus gallus,Scaffold,25180,NW_024096336.1
+Gallus gallus,Scaffold,25072,NW_024096337.1
+Gallus gallus,Scaffold,24982,NW_024096338.1
+Gallus gallus,Scaffold,24665,NW_024096339.1
+Gallus gallus,Scaffold,24378,NW_024096340.1
+Gallus gallus,Scaffold,23823,NW_024096341.1
+Gallus gallus,Scaffold,22402,NW_024096342.1
+Gallus gallus,Scaffold,22287,NW_024096343.1
+Gallus gallus,Scaffold,19990,NW_024096344.1
+Gallus gallus,Scaffold,18537,NW_024096345.1
+Gallus gallus,Scaffold,18483,NW_024096346.1
+Gallus gallus,Scaffold,17380,NW_024096347.1
+Gallus gallus,Scaffold,17236,NW_024096348.1
+Gallus gallus,Scaffold,15061,NW_024096349.1
+Gallus gallus,Scaffold,11591,NW_024096350.1
+Gallus gallus,Scaffold,6648,NW_024096351.1
+Gallus gallus,Scaffold,5799,NW_024096352.1
+Gallus gallus,Scaffold,5450,NW_024096353.1
+Gallus gallus,Scaffold,4186,NW_024096354.1
+Gallus gallus,Scaffold,3285,NW_024096355.1
+Gallus gallus,Scaffold,3092,NW_024096356.1
+Gallus gallus,Scaffold,2434,NW_024096357.1
+Gallus gallus,Scaffold,1219,NW_024096358.1

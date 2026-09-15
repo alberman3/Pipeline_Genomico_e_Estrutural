@@ -4,11 +4,11 @@ from Bio.Seq import Seq
 from Bio import Entrez, SeqIO
 
 class MotorBiopython:
-    def __init__(self, chr_acc, start, stop, fasta_file, gene_symbol="GAPDH"):
+    def __init__(self, chr_acc, start, stop,taxon, fasta_file, gene_symbol="GAPDH"):
         self.chr_acc = chr_acc
         self.fasta_file = fasta_file
         self.gene_symbol = gene_symbol
-        
+        self.taxon = taxon
         # Garante que o start é o menor número para a API de download
         self.genomic_start = min(int(start), int(stop)) + 1 
         self.genomic_stop = max(int(start), int(stop)) + 1
@@ -49,6 +49,8 @@ class MotorBiopython:
         
         raw_coords = cds_match.group(1)
         # Extrai todos os pares de números (início..fim) ignorando quebras de linha
+        #procura por qualquer bloco de números separados por dois pontos (ex: 1532..1700). 
+        #Ele extrai o começo e o fim de cada éxon que compõe o gene.
         exon_pairs = re.findall(r'(\d+)\.\.(\d+)', raw_coords)
         
         # Converte as coordenadas locais (do recorte) para as coordenadas globais do cromossomo
