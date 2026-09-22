@@ -23,7 +23,8 @@ class NCBIGenomeMiner:
             # 1. Procura a montagem (Assembly) de referência da espécie
             print("1. Buscando o genoma de referência (Assembly)...")
             # Etapa 1: Busca o genoma de referência da espécie
-            search_handle = Entrez.esearch(db="assembly", term=f'"{self.taxon}"[Organism] AND "latest refseq"[filter]', retmax=1)
+           
+            search_handle = Entrez.esearch(db="assembly", term=f'"{self.taxon}"[Organism] AND "reference genome"[filter]', retmax=1)
             
             assembly_record = Entrez.read(search_handle)
             search_handle.close()
@@ -42,7 +43,7 @@ class NCBIGenomeMiner:
             # 3. Mapeia os cromossomos ligados a esta montagem
             print("2. Mapeando os cromossomos (Nuccore)...")
             # Etapa 2: Mapeia os cromossomos
-            nuc_search = Entrez.esearch(db="nuccore", term=f'{assembly_acc}[Assembly] AND biomol_genomic[PROP]', retmax=1500)
+            nuc_search = Entrez.esearch(db="nuccore", term=f'{assembly_acc}[Assembly] AND biomol_genomic[PROP]', retmax=500)
             nuc_record = Entrez.read(nuc_search)
             nuc_search.close()
             
@@ -85,6 +86,9 @@ class NCBIGenomeMiner:
             raise RuntimeError(f"Falha definitiva ao extrair cromossomos para {self.taxon}.")
             
         df = df.drop_duplicates(subset=["ID do Cromossomo (FASTA)"])
+
+        # Filtra apenas os registros que são cromossomos de fato (descarta scaffolds/fragmentos)
+        df = df[df["Cromossomo"].str.contains("chromosome", case=False, na=False)]
         # Retorna ordenado do maior para o menor
         return df.sort_values(by="Tamanho (bp)", ascending=False).reset_index(drop=True)
 

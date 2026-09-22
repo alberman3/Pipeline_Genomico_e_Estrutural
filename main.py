@@ -1,7 +1,7 @@
 import os
 from miner import NCBIGenomeMiner  # Importa a classe do arquivo miner.py
 from MotorBiopython import MotorBiopython  # Importa a classe do motor da Fase 2
-
+from fase3_integracao import GAPDHFunctionalAPI
 if __name__ == "__main__":
     # Instancia a ferramenta para a espécie designada
     miner = NCBIGenomeMiner(taxon="Gallus gallus")
@@ -42,3 +42,18 @@ if __name__ == "__main__":
             gene_symbol="GAPDH"
         )
         motor.executar_fase2()
+
+
+    # -------------------------------------------------------------
+    # FASE 3: Integração de APIs REST Funcionais (Passo 7)
+    # -------------------------------------------------------------
+    print("\n--- [PASSO 7 - FASE 3] Consultando APIs REST (UniProt e KEGG) ---")
+    api_runner = GAPDHFunctionalAPI(uniprot_id="P00356")
+    df_tabela2 = api_runner.generate_tabela_2()
+    
+    print("\n=== TABELA 2: DADOS FUNCIONAIS EXTRAÍDOS POR API (RTA 4.1) ===")
+    print(df_tabela2.to_string(index=False))
+    
+    df_tabela2.to_csv("tabela2_dados_funcionais_gallus_gallus.csv", index=False)
+    print("\n[OK] Tabela 2 guardada em 'tabela2_dados_funcionais_gallus_gallus.csv'.")
+    print("\n=== PIPELINE INDIVIDUAL CONCLUÍDO COM SUCESSO! ===")    
