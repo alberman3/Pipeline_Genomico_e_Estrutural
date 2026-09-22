@@ -1,0 +1,11 @@
+biopython: Responsável pelo acesso ao NCBI (Bio.Entrez), manipulação de sequências FASTA (Bio.SeqIO), fita reversa complementar, tradução in silico e pelo Alinhamento Múltiplo (MSA) na Fase 4 (Bio.Align).
+
+pandas: Usado para organizar, filtrar, formatar e salvar as tabelas em CSV (Tabela 1 de cromossomos e Tabela 2 de APIs).
+
+requests: Responsável pelo download dos arquivos FASTA pesados via HTTP e pela comunicação com as APIs RESTful do UniProt e KEGG.
+
+matplotlib: Utilizado no motor da Fase 2 para desenhar e salvar a Figura 1 (mapa dos éxons do gene GAPDH).
+
+py3Dmol: Biblioteca gráfica para renderizar a estrutura 3D da proteína GAPDH diretamente no Jupyter Notebook.
+
+ipywidgets: Necessário para garantir que os componentes interativos do 3D funcionem perfeitamente dentro do VS Code / Jupyter.
