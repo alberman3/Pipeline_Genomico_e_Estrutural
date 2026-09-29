@@ -1,8 +1,14 @@
 import os
-from miner import NCBIGenomeMiner  # Importa a classe do arquivo miner.py
-from MotorBiopython import MotorBiopython  # Importa a classe do motor da Fase 2
-from fase3_integracao import GAPDHFunctionalAPI
+from fases.miner import NCBIGenomeMiner  # Importa a classe do pasta fases/
+from fases.MotorBiopython import MotorBiopython  # Importa a classe do motor da Fase 2
+from fases.fase3_integracao import GAPDHFunctionalAPI
+
 if __name__ == "__main__":
+    # Garante a existência das pastas de resultados antes de salvar
+    os.makedirs("resultados/fase1", exist_ok=True)
+    os.makedirs("resultados/fase2", exist_ok=True)
+    os.makedirs("resultados/fase3", exist_ok=True)
+
     # Instancia a ferramenta para a espécie designada
     miner = NCBIGenomeMiner(taxon="Gallus gallus")
     
@@ -14,7 +20,9 @@ if __name__ == "__main__":
     
     # Exibe a Tabela 1 solicitada no RTA
     print(df_chromosomes.head(10)) 
-    df_chromosomes.to_csv("tabela1_caracterizacao_genoma_gallus_gallus.csv", index=False)
+    tabela1_path = "resultados/fase1/tabela1_caracterizacao_genoma_gallus_gallus.csv"
+    df_chromosomes.to_csv(tabela1_path, index=False)
+    print(f"[OK] Tabela 1 salva em '{tabela1_path}'.")
     
     # -------------------------------------------------------------
     # PASSO 2: Localização do Gene GAPDH e Download do Cromossomo
@@ -23,8 +31,8 @@ if __name__ == "__main__":
     gene_info = miner.locate_gene(gene_symbol="GAPDH")
     print(f"Gene GAPDH localizado no Cromossomo RefSeq: {gene_info['chr_acc']} (Cromossomo nº {gene_info['chr_num']})")
     
-    # Download do FASTA do cromossomo
-    fasta_filename = f"chromosome_{gene_info['chr_acc']}.fasta"
+    # Download do FASTA do cromossomo para a pasta da fase1
+    fasta_filename = f"resultados/fase1/chromosome_{gene_info['chr_acc']}.fasta"
     if not os.path.exists(fasta_filename):
         miner.download_chromosome_fasta(accession_id=gene_info["chr_acc"], output_path=fasta_filename)
     
@@ -43,7 +51,6 @@ if __name__ == "__main__":
         )
         motor.executar_fase2()
 
-
     # -------------------------------------------------------------
     # FASE 3: Integração de APIs REST Funcionais (Passo 7)
     # -------------------------------------------------------------
@@ -54,6 +61,7 @@ if __name__ == "__main__":
     print("\n=== TABELA 2: DADOS FUNCIONAIS EXTRAÍDOS POR API (RTA 4.1) ===")
     print(df_tabela2.to_string(index=False))
     
-    df_tabela2.to_csv("tabela2_dados_funcionais_gallus_gallus.csv", index=False)
-    print("\n[OK] Tabela 2 guardada em 'tabela2_dados_funcionais_gallus_gallus.csv'.")
-    print("\n=== PIPELINE INDIVIDUAL CONCLUÍDO COM SUCESSO! ===")    
+    tabela2_path = "resultados/fase3/tabela2_dados_funcionais_gallus_gallus.csv"
+    df_tabela2.to_csv(tabela2_path, index=False)
+    print(f"\n[OK] Tabela 2 guardada em '{tabela2_path}'.")
+    print("\n=== PIPELINE INDIVIDUAL CONCLUÍDO COM SUCESSO! ===")
